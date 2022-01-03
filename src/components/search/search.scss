@@ -1,0 +1,135 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    padding: 20px 30px;
+
+    .searchAndLocationCTA {
+        width: 50%;
+        display: inline-flex;
+        padding-top: 10px;
+        .search-input {
+            margin: 0 auto;
+        }
+
+        .current-location {
+            border-radius: 10px;
+            height: 36px;
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+            background:#0099ff;
+            color:white;
+            padding:10px 20px;
+            border:0 none;
+            font-weight:bold;
+            cursor: pointer;
+            
+        }
+
+        #search-btn {
+            background:#0099ff;
+            color:white;
+            font: 'trebuchet ms', trebuchet;
+            padding:10px 20px;
+            border-radius:0 10px 10px 0;
+            -moz-border-radius:0 10px 10px 0;
+            -webkit-border-radius:0 10px 10px 0;
+            -o-border-radius:0 10px 10px 0;
+            border:0 none;
+            font-weight:bold;
+        }
+    
+        #search-box {
+            background: #eee;
+            padding:10px;
+            border-radius:10px 0 0 10px;
+            -moz-border-radius:10px 0 0 10px;
+            -webkit-border-radius:10px 0 0 10px;
+            -o-border-radius:10px 0 0 10px;
+            border:0 none;
+            width:160px;
+        }
+    }
+
+    .CityAndCountrSelector {
+        display: inline-flex;
+        .search-field {
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .search-label {
+            font-size: 14px;
+            margin: 0 15px;
+            max-width: 80px;
+        }
+
+        .search-select {
+            font-size: 14px;
+            border-radius: 10px;
+            max-width: 180px;
+            background: #eee;
+            padding:10px;
+            border:0 none;
+            cursor: pointer;
+        }
+
+        .search-submit {
+            border-radius: 10px;
+            height: 36px;
+            width: 140px;
+            margin: 0 auto;
+            text-align: center;
+            background:#0099ff;
+            color:white;
+            padding:10px 20px;
+            border:0 none;
+            font-weight:bold;
+            margin-top: 10px;
+            cursor: pointer;
+            
+        }
+    }
+
+}
+
+.results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    background: url('https://source.unsplash.com/collection/1408037/1600x900') no-repeat center / cover;
+
+}
+  
+
+@media only screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+
+        .searchAndLocationCTA {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .search-input {
+                white-space: nowrap;
+                padding-top: 15px;
+            }
+        }
+
+        .CityAndCountrSelector {
+            display: flex;
+            flex-direction: column;
+
+            .country-select {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .results-container {
+        flex-direction: column;
+        margin: 0;
+    }
+  }
