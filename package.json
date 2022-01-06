@@ -24,7 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "node-sass -w ./src/components/styles/ -o ./public/index.css"
-
   },
   "eslintConfig": {
     "extends": [

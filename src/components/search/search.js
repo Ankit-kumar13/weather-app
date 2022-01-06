@@ -188,7 +188,7 @@ function getWeatherDataOnCurrLoc() {
     </div>
 
     {
-        weatherData ? <div className="results-container"><CardData data={weatherData} /> <Maps data={weatherData} lat = {lat} long = {long} className="google-maps"/></div> : ""
+        weatherData ? <div className="results-container" style={{ backgroundImage: `url(${require("../../images/mountains.jpg")})` }}><CardData data={weatherData} /> <Maps data={weatherData} lat = {lat} long = {long} className="google-maps"/></div> : ""
     }
     
     </>
